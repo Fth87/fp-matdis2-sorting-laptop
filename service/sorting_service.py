@@ -5,6 +5,7 @@ def merge_sort(arr, left, right):
         merge_sort(arr, mid + 1, right)
         merge(arr, left, mid, right)
 
+
 def merge(arr, left, mid, right):
     n1 = mid - left + 1
     n2 = right - mid
@@ -21,7 +22,7 @@ def merge(arr, left, mid, right):
     k = left
 
     while i < n1 and j < n2:
-        if L[i]['Skor'] >= R[j]['Skor']:
+        if L[i]["Skor"] >= R[j]["Skor"]:
             arr[k] = L[i]
             i += 1
         else:

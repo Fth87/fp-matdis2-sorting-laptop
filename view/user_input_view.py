@@ -6,5 +6,6 @@ def display_price_levels():
         else:
             print("9. Rp20,000,000 ke atas")
 
+
 def get_user_choice():
     return input("Masukkan pilihan (1-9): ")
